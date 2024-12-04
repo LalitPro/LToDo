@@ -4,7 +4,6 @@ function TodoApp() {
   const defaultTodos = [
     { id: 1, text: "Clean my computer", done: false },
     { id: 2, text: "Buy a keyboard", done: false },
-    { id: 3, text: "Write an article about @xstate/test", done: true },
   ];
 
   const [todos, setTodos] = useState([]);
@@ -140,16 +139,9 @@ function TodoApp() {
                             key={todo.id}
                             className="relative flex items-start"
                           >
-                            <div className="flex items-center h-5">
-                              <input
-                                type="checkbox"
-                                checked={todo.done}
-                                onChange={() => toggleTodo(todo.id)}
-                                className="w-4 h-4 text-yellow-600 border-gray-300 rounded focus:ring-yellow-500"
-                              />
-                            </div>
+                            <div className="flex items-center h-5"></div>
                             <div className="ml-3 text-sm">
-                              <span className="font-medium text-gray-700">
+                              <span className="font-medium text-gray-700 line-through">
                                 {todo.text}
                               </span>
                             </div>
@@ -181,7 +173,7 @@ function TodoApp() {
                   type="text"
                   name="new-todo"
                   className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm"
-                  placeholder="Write an article about XState"
+                  placeholder="Write Your Task Here"
                   value={newTodo}
                   onChange={(e) => setNewTodo(e.target.value)}
                 />
