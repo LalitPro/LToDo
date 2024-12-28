@@ -1,9 +1,12 @@
-import React from 'react';
-import TodoApp from './TodoApp';
-  
+import React from "react";
+import TodoApp from "./TodoApp";
+import TodoProvider from "./TodoContext";
+
 function App() {
   return (
-    <TodoApp />
+    <TodoProvider>
+      <TodoApp />
+    </TodoProvider>
   );
 }
 
