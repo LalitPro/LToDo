@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { TodoContext } from "./TodoContext";
 import { IoMdAdd } from "react-icons/io";
-import Todo from "./TODO";
+import Todo from "./Todo";
 import AddTodo from "./AddTodo";
 
 function TodoApp() {
