@@ -5,6 +5,7 @@ import Todo from "./TODO";
 import AddTodo from "./AddTodo";
 
 function TodoApp() {
+  
   const {
     todos,
     handleSaveTodo,
@@ -58,8 +59,9 @@ function TodoApp() {
                       <Todo
                         key={todo.id}
                         toggleTodo={toggleTodo}
+                       todo={todo}
                         removeTodo={removeTodo}
-                        todo={todo}
+                   
                       />
                     ))
                 )}
